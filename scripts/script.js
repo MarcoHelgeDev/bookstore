@@ -194,14 +194,20 @@ let books = [
 ];
 
 const user = "Marco-Helge";
-const booksRef = document.querySelector(".books");
+const booksRef = document.querySelector(".js-books");
 
 const renderBooks = function (arr) {
   let html = "";
   for (let index = 0; index <= arr.length - 1; index++) {
+    html += `<div class="books">`;
+    html += `<div class="book-section">`;
     html += renderTemplate(index);
+    html += `<div class="comments-wrapper">`;
     html += comment(arr, index);
+    html += `</div>`;
     html += renderWriteCommentTemplate(index);
+    html += `</div>`;
+    html += `</div>`;
   }
   booksRef.innerHTML = html;
   addLikeEvent();
@@ -246,12 +252,18 @@ const addCommentEvent = function () {
 };
 
 const likeBook = function (index) {
+  const btn = document.querySelector(`.js-like-${index}`);
+  console.log(btn);
   if (books[index].liked) {
     books[index].liked = false;
     books[index].likes -= 1;
+    btn.classList.remove("likeBtn");
+    btn.classList.add("notLikeBtn");
   } else {
     books[index].liked = true;
     books[index].likes += 1;
+    btn.classList.remove("notLikeBtn");
+    btn.classList.add("likeBtn");
   }
   renderBooks(books);
 };

@@ -1,0 +1,116 @@
+@import "assets.css";
+@import "global.css";
+
+.color-red {
+  color: var(--heart-red);
+}
+
+.small-font {
+  font-size: 1.5rem;
+}
+
+.flat-icon-footer {
+  font-size: 1rem;
+}
+
+/*Price- and Like-Section*/
+.price-like-wrapper {
+  display: flex;
+  margin-bottom: 2rem;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.book-price {
+  margin-left: 5rem;
+  font-size: 2.5rem;
+  color: var(--heart-red);
+  font-weight: 600;
+}
+
+.book-like {
+  margin-right: 5rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+
+.like-counter {
+  margin-right: 0.8rem;
+}
+
+/*About the Book-Section*/
+.about-book {
+  width: 90%;
+  text-align: left;
+  margin-left: 5rem;
+  margin-bottom: 2rem;
+}
+
+.about-book td {
+  padding-left: 1rem;
+}
+
+/* Comment-Section */
+.comments-wrapper {
+  width: 100%;
+  flex: 1;
+  overflow-y: auto;
+  margin-bottom: 1rem;
+}
+
+.comments-wrapper::-webkit-scrollbar {
+  width: 6px;
+}
+
+.comments-wrapper::-webkit-scrollbar-thumb {
+  background: #fc5b4e;
+  border-radius: 10px;
+}
+
+.comments-section {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+}
+
+.comments-section-user {
+  width: 120px;
+  text-align: left;
+  margin-left: 5rem;
+  font-weight: 600;
+}
+
+.comments-section-comment {
+  flex: 1;
+  text-align: left;
+  margin-right: 5rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+/*Write Comment-Section*/
+.comment-form {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 90%;
+  margin: 2rem 0;
+  background-color: #143845;
+  border-radius: 1rem;
+  padding: 0.8rem 1rem;
+}
+
+.comment-input {
+  flex: 1;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  outline: none;
+}
+
+.comment-input::placeholder {
+  color: #8fb4bf;
+}
