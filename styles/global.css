@@ -22,6 +22,21 @@ h2 {
   font-size: 3rem;
 }
 
+@media (max-width: 500px) {
+  h2 {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 360px) {
+  h2 {
+    font-size: 1.8rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
 h3 {
   width: 100%;
   padding-left: 5rem;
@@ -30,6 +45,22 @@ h3 {
   text-align: left;
   flex-shrink: 0;
   margin-top: 2rem;
+}
+
+@media (max-width: 460px) {
+  h3 {
+    font-size: 1.5rem;
+    text-align: left;
+    padding-left: 4rem;
+  }
+}
+
+@media (max-width: 360px) {
+  h3 {
+    font-size: 1.5rem;
+    text-align: left;
+    padding-left: 4rem;
+  }
 }
 
 input,
@@ -45,6 +76,12 @@ button {
 body {
   font-size: 1.6rem;
   font-family: Montserrat, sans-serif;
+}
+
+@media (max-width: 360px) {
+  body {
+    font-size: 1.3rem;
+  }
 }
 
 a {

@@ -13,6 +13,18 @@
   font-size: 1rem;
 }
 
+@media (max-width: 460px) {
+  .small-font {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 381px) {
+  header span {
+    font-size: 1.8rem;
+  }
+}
+
 /*Price- and Like-Section*/
 .price-like-wrapper {
   display: flex;
@@ -38,6 +50,20 @@
 
 .like-counter {
   margin-right: 0.8rem;
+}
+
+@media (max-width: 460px) {
+  .book-price {
+    font-size: 2rem;
+    margin-left: 4.4rem;
+  }
+}
+
+@media (max-width: 381px) {
+  .book-price {
+    font-size: 1.8rem;
+    margin-left: 4rem;
+  }
 }
 
 /*About the Book-Section*/
@@ -80,6 +106,20 @@
   text-align: left;
   margin-left: 5rem;
   font-weight: 600;
+}
+
+@media (max-width: 460px) {
+  .comments-section-user {
+    font-size: 1.3rem;
+    margin-left: 3.9rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .comments-section-user {
+    font-size: 1.3rem;
+    margin-left: 3.8rem;
+  }
 }
 
 .comments-section-comment {
