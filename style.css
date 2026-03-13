@@ -1,5 +1,5 @@
-@import "assets.css";
-@import "global.css";
+@import "./styles/assets.css";
+@import "./styles/global.css";
 
 .color-red {
   color: var(--heart-red);

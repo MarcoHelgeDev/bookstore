@@ -6,7 +6,7 @@ const renderTemplate = function (index) {
         <div class="divider"></div>
       <div class="price-like-wrapper">
         <div class="book-price">
-          <span>${books[index].price} €</span>
+          <span>${books[index].price.toFixed(2)} €</span>
         </div>
         <div class="book-like">
           <span class="like-counter">${books[index].likes}</span>
