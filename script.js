@@ -1,14 +1,14 @@
 const user = "Marco-Helge";
 const booksRef = document.querySelector(".js-books");
 
-const renderBooks = function (arr) {
+const renderBooks = function (bookData) {
   let html = "";
-  for (let index = 0; index <= arr.length - 1; index++) {
+  for (let index = 0; index <= bookData.length - 1; index++) {
     html += `<div class="books">`;
     html += `<div class="book-section">`;
     html += renderTemplate(index);
     html += `<div class="comments-wrapper">`;
-    html += comment(arr, index);
+    html += comment(bookData, index);
     html += `</div>`;
     html += renderWriteCommentTemplate(index);
     html += `</div>`;
@@ -20,10 +20,10 @@ const renderBooks = function (arr) {
   saveToLocalStorage();
 };
 
-const comment = function (arr, index) {
+const comment = function (bookData, index) {
   let html = "";
-  for (let i = 0; i < arr[index].comments.length; i++) {
-    html += renderCommentsTemplate(arr, index, i);
+  for (let i = 0; i < bookData[index].comments.length; i++) {
+    html += renderCommentsTemplate(bookData, index, i);
   }
   return html;
 };
